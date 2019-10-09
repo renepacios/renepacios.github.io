@@ -1,7 +1,5 @@
 ﻿<!DOCTYPE html>
 <html doc>
-<script async="" src="//www.google-analytics.com/ga.js"></script>
-<script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +16,10 @@
     <link rel="icon" type="image/png" sizes="96x96" href="images/icons/logo-96x96.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/logo-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/logo-16x16.png">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32683326-1"></script>
+   
 </head>
 <body>
     <div class="bg"></div>
@@ -70,14 +72,12 @@
     </section>
 
 
-    <script>
-            var _gaq = [["_setAccount", "UA-7563079"], ["_trackPageview"]];
-            (function (d, t) {
-                var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.async = 1;
-                g.src = ("https:" == location.protocol ? "//ssl" : "//www") + ".google-analytics.com/ga.js";
-                s.parentNode.insertBefore(g, s);
-            }(document, "script"));
-    </script>
+   <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-32683326-1');
+    </script>pt>
 
 </body>
 </html>
