@@ -1,0 +1,23 @@
+﻿/* OWNER */
+
+# TEAM
+
+	René Pacios
+	Site: contacto@webrene.es
+	GitHub Profile: https://github.com/rene15009
+	Twitter: @rene15009
+	Location: Spain
+	Website: www.webrene.es
+
+
+                              
+/* SITE */    
+
+	Last update: 2019/10/22
+	Standards: HTML5, CSS3,..                            
+	Components: FontAwesome, etc.                            
+	Software: Visual Studio, Visual Studio Code
+
+# THANKS
+
+	Steve "ardalis" Smith @ardalis - Harlem Shake
