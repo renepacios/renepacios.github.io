@@ -72,10 +72,17 @@ a:hover {
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
+.no-webp .header__thumb {
+    background: url(../images/Rene.jpg);
+}
+
+.webp .header__thumb {
+    background: url(../images/Rene.webp);
+}
 .header__thumb {
     border-radius: 50%;
     // background: url(../images/Rene.jpg);
-    background-size: cover;
+    background-size: cover !important;
     margin: 0 auto;
     width: 220px;
     height: 220px;
@@ -84,13 +91,6 @@ a:hover {
     border: 6px solid #1b1b1b;
 }
 
-.no-webp .header__thumb {
-    background: url(../images/Rene.jpg);
-}
-
-.webp .header__thumb {
-    background: url(../images/Rene.webp);
-}
 
 .header__name {
     font-weight: 500;
@@ -153,37 +153,22 @@ a:hover {
 }
 
 @media screen and (min-width: 1921px) {
-
     .gen-bg-webp('bg-1920x1080');
-    .no-webp .bg {
-        background-image: url(../images/bg/bg-1920x1080.JPG);
-    }
-
-    .webp .bg {
-        background-image: url(../images/bg/webp/bg-1920x1080.webp);
-    }
+    // .no-webp .bg {
+    //     background-image: url(../images/bg/bg-1920x1080.JPG);
+    // }
+    //
+    // .webp .bg {
+    //     background-image: url(../images/bg/webp/bg-1920x1080.webp);
+    // }
 }
 
 @media screen and (max-width: 1920px) {
-
-
-    .no-webp .bg {
-        background-image: url(../images/bg/bg-1920x1080.JPG);
-    }
-
-    .webp .bg {
-        background-image: url(../images/bg/webp/bg-1920x1080.webp);
-    }
+    .gen-bg-webp('bg-1920x1080');
 }
 
 @media screen and (max-width: 1366px) {
-    .no-webp .bg {
-        background-image: url(../images/bg/bg-1366x768.JPG);
-    }
-
-    .webp .bg {
-        background-image: url(../images/bg/webp/bg-1366x768.webp);
-    }
+    .gen-bg-webp('bg-1366x768');
 
     .header__subtitle {
         text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
@@ -191,15 +176,14 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-    .no-webp .bg {
-        background-image: url(../images/bg/bg-1024x768.JPG);
+    .gen-bg-webp('bg-1024x768');
+
+    .bg {
+        -ms-background-position: 25%;
         background-position: 25%;
     }
 
-    .webp .bg {
-        background-image: url(../images/bg/webp/bg-1024x768.webp);
-        background-position: 25%;
-    }
+
 
     body,
     html {
@@ -208,15 +192,13 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .no-webp .bg {
-        background-image: url(../images/bg/bg-1024x768.JPG);
+    .gen-bg-webp('bg-1024x768');
+
+    .bg {
+        -ms-background-position: 40%;
         background-position: 40%;
     }
 
-    .webp .bg {
-        background-image: url(../images/bg/webp/bg-1024x768.webp);
-        background-position: 40%;
-    }
 
     body,
     html {
@@ -234,13 +216,7 @@ a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    .no-webp .bg {
-        background-image: url(../images/bg/bg-854x480.jpg);
-    }
-
-    .webp .bg {
-        background-image: url(../images/bg/webp/bg-854x480.webp);
-    }
+    .gen-bg-webp('bg-854x480');
 
     .footer {
         background: rgba(0, 0, 0, 0.5);
@@ -259,13 +235,7 @@ a:hover {
 }
 
 @media screen and (max-width: 320px) {
-    .no-webp .bg {
-        background-image: url(../images/bg/bg-320x569.jpg);
-    }
-
-    .webp .bg {
-        background-image: url(../images/bg/webp/bg-320x569.webp);
-    }
+    .gen-bg-webp('bg-320x569');
 }
 
 @media (orientation: landscape) and (max-device-width: 1024px) {
