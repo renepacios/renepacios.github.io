@@ -2,6 +2,8 @@
 ; (function (cnx, undefined) {
 
     cnx.harlem = cnx.harlem || {};
+    cnx.harlem.self = this;
+
 
     cnx.harlem.start = function () {
         var baseUrl = '/cdn/harlem/';
@@ -9,7 +11,7 @@
         var t = 30;
         var n = 350;
         var r = 350;
-        var i = baseUrl +
+        var videoUrl = baseUrl +
             'harlem-shake.mp3'; // "https://s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
         var s = "mw-harlem_shake_me";
         var o = "im_first";
@@ -96,7 +98,7 @@
         function S() {
             var e = document.createElement("audio");
             e.setAttribute("class", l);
-            e.src = i;
+            e.src = videoUrl;
             e.loop = false;
             e.addEventListener("canplay",
                 function () {
@@ -142,7 +144,7 @@
             }
         }
 
-        
+
         for (var L = 0; L < C.length; L++) {
             var A = C[L];
             if (v(A)) {

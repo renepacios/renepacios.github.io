@@ -12,11 +12,13 @@
         doc.body.appendChild(script);
     };
 
-    loadjs("/cdn/harlem/harlem-shake.min.js");
+
     loadjs("/cdn/js/cheet.min.js", function () {
         //console.log(window, window.cnx,cheet);
-        cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
-            cnx.harlem.start();
+        cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () { //konamicode 
+            loadjs("/cdn/harlem/harlem-shake.min.js", function () {
+                cnx.harlem.start();
+            }); //descarga harlem y arranca
         });
     });
 
