@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "cdn/harlem/harlem-shake.min.js",
+    "inputFiles": [
+      "cdn/harlem/harlem-shake.js"
+    ]
+  },
+  {
+    "outputFileName": "cdn/harlem/harlem-shake.min.css",
+    "inputFiles": [
+      "cdn/harlem/harlem-shake.css"
+    ]
+  }
+]
