@@ -64,7 +64,7 @@
         function m(e) {
             var t = e;
             var n = 0;
-            while (!!t) {
+            while (t) {
                 n += t.offsetTop;
                 t = t.offsetParent
             }
@@ -73,7 +73,7 @@
 
         function g() {
             var e = document.documentElement;
-            if (!!window.innerWidth) {
+            if (window.innerWidth) {
                 return window.innerHeight
             } else if (e && !isNaN(e.clientHeight)) {
                 return e.clientHeight
