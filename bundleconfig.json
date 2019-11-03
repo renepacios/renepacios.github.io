@@ -3,12 +3,24 @@
     "outputFileName": "cdn/harlem/harlem-shake.min.js",
     "inputFiles": [
       "cdn/harlem/harlem-shake.js"
-    ]
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
   },
   {
     "outputFileName": "cdn/harlem/harlem-shake.min.css",
     "inputFiles": [
       "cdn/harlem/harlem-shake.css"
-    ]
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "js/index.min.js",
+    "inputFiles": [
+      "js/index.js"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
   }
 ]
