@@ -1,0 +1,90 @@
+﻿@import "mixins";
+
+/*ClearFix*/
+.clearfix {
+    zoom: 1;
+
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+/* IE6 */
+*html .clearfix {
+    zoom: 1;
+}
+/* IE7 */
+*:first-child + html .clearfix {
+    zoom: 1;
+}
+
+/*Image replacement*/
+.r-ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 150%;
+    }
+}
+
+.r-animado {
+    .rf-transition-all(.3s);
+}
+
+//Pone ... cuando no entra un texto*/
+.r-text-overflow {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//esconde texto para reemplazar por una imagen
+.r-esconder-texto {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+//oculta un elemento del DOM para no verlo en el navegador
+.r-oculto {
+    display: none !important;
+    visibility: hidden;
+}
+//oculta un elemento del DOM pero mantiene el espacio que ocupa
+.r-invisible {
+    visibility: hidden;
+}
+
+// Esconder pero dejar visible para navegadores de voz (Screenreaders)
+.r-visualmenteescondido {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    /*// Esconder pero permitir hacerle target con el teclado*/
+    &.focusable:active, &.focusable:focus {
+        position: static;
+        clip: auto;
+        height: auto;
+        width: auto;
+        margin: 0;
+        overflow: visible;
+    }
+}

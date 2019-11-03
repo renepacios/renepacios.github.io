@@ -1,0 +1,96 @@
+﻿
+///***       LESS HELPERS         ***/
+.r-ancho-maximo(@ancho) {
+    max-width: @ancho;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rf-border-radius (@radius: 5px) {
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.rf-transition-all(@transition) {
+    ///*transition: [Propiedades] [Tiempo] [Función de Tiempo] [Retardo]*/
+    -webkit-transition: all @transition ease-in-out;
+    -moz-transition: all @transition ease-in-out;
+    -o-transition: all @transition ease-in-out;
+    transition: all @transition ease-in-out;
+}
+
+.rf-transition(@transition) {
+    //transition: [Propiedades] [Tiempo] [Función de Tiempo] [Retardo]
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+.rf-rotate(@grados: 360deg) {
+    -moz-transform: rotate(@grados);
+    -webkit-transform: rotate(@grados);
+    -ms-transform: rotate(@grados);
+    -o-transform: rotate(@arguments);
+    transform: rotate(@arguments);
+}
+
+.rf-grayscale(@v: 1) {
+    -webkit-filter: grayscale(@v);
+    -moz-filter: grayscale(@v);
+    -ms-filter: grayscale(@v);
+    -o-filter: grayscale(@v);
+    filter: grayscale(@v);
+}
+
+.rf-sepia(@v: 1) {
+    -webkit-filter: sepia(@v);
+    -moz-filter: sepia(@v);
+    -ms-filter: sepia(@v);
+    -o-filter: sepia(@v);
+    filter: sepia(@v);
+}
+
+.rf-opacity(@op: 80) {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    -moz-opacity: @op / 100;
+    -khtml-opacity: @op / 100;
+    opacity: @op / 100;
+    filter: ~"alpha(opacity=@{op})";
+}
+
+.rf-sombras-caja() {
+    -webkit-box-shadow: inset 0 10px 60px 0 rgba(0,0,0,0.15);
+    box-shadow: inset 0 10px 60px 0 rgba(0,0,0,0.15);
+}
+
+.rf-divisor(@alto: 4px) {
+    border-top: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+    height: @alto;
+    margin: 2em 0 2em 0;
+}
+
+.fondoc(@hex) {
+    background-color: @hex;
+    -webkit-box-shadow: inset 0 10px 60px 0 rgba(0,0,0,0.15);
+    box-shadow: inset 0 10px 60px 0 rgba(0,0,0,0.15);
+}
+
+.rf-fondoc-alpha(@hex, @alpha: .8) {
+    background-color: @hex; /*IE FallBack*/
+    background-color: hsla(hue(@hex), saturation(@hex), lightness(@hex), @alpha); // rgba(...)
+    -webkit-box-shadow: inset 0 10px 60px 0 rgba(0,0,0,0.15);
+    box-shadow: inset 0 10px 60px 0 rgba(0,0,0,0.15);
+}
+
+.rf-li-colums(@nColums) {
+    overflow: hidden;
+
+    li {
+        float: left;
+        display: inline;
+        width: (100% / @nColums);
+    }
+}

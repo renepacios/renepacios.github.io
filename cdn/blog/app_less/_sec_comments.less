@@ -1,0 +1,53 @@
+﻿@import "_definitions";
+
+//@url_img_triangulo_bocadillo: 'https: //drive.google.com/uc?id=13hJBEFF2PFNhYOq0ksvLNjcy0DSTqA5S;'
+
+#comments {
+    background-color: #ffffff;
+    padding: 4%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+
+    .well-global-title {
+        border-bottom: 1px solid @bg-color;
+        padding-bottom: 20px;
+    }
+
+
+    .comments-content {
+
+        li.comment {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+
+        .comment-block {
+            border: 1px solid @bg-color;
+            border-radius: 4px;
+            padding: 2%;
+            margin-bottom: 10px !important;
+
+            &:before {
+                @ancho: 9px;
+
+                background: url('https://drive.google.com/uc?id=13hJBEFF2PFNhYOq0ksvLNjcy0DSTqA5S') no-repeat 0 0;
+                content: '';
+                width: @ancho;
+                height: 17px;
+                position: absolute;
+                left: @ancho * (-1);
+                top: @ancho;
+                z-index: 999;
+            }
+        }
+
+        .comment-replies {
+            & > div {
+                padding-right: 0;
+            }
+        }
+    }
+    //  background-image: url('../cdn/img/carrow.png');
+}

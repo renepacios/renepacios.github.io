@@ -1,0 +1,127 @@
+﻿@import "_definitions";
+
+/*.widget {
+    background-color: #ffffff;
+    padding: 6%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px #000000;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.widget .widget-header { margin: 0 0 15px 0; border-bottom: 1px solid #eeeeee; padding-bottom: 4%; font-weight: bold; font-size: 16px; }
+.widget ul { list-style: none; padding: 0; }
+.widget ul li { border-bottom: 1px solid #eee; padding: 4px 0; }
+.widget ul ul li { border: none; }*/
+.content-wrapper, .sidebar-wrapper {
+    .widget {
+        background-color: #ffffff;
+        padding: 6%;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        box-shadow: 0 1px 2px #000000;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+
+        &.Blog { //para sobreescribir el estilo base y que sólo los widgets del panel de la derecha tenngan este padding
+            padding: 0;
+        }
+
+        .widget-header {
+            margin: 0 0 15px 0;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 4%;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                border-bottom: 1px solid #eee;
+                padding: 4px 0;
+            }
+
+            ul li {
+                border: none;
+            }
+        }
+    }
+}
+
+
+
+.widget {
+    &.Blog {
+        //Sección principal del blog. Listado de posts
+        background-color: @bg-color;
+        box-shadow: none;
+    }
+
+    &.Profile {
+        p {
+            img {
+                float: left;
+                margin-right: 10px;
+                border: 1px solid #CCCCCC;
+                padding: 2px;
+            }
+
+            font-size: 13px;
+            text-align: justify;
+            line-height: 20px;
+        }
+    }
+
+    &.Label {
+        .cloud-label-widget-content {
+            text-align: center;
+        }
+
+        .label-size {
+            line-height: 2.2em;
+            padding: 8px;
+
+            a {
+                padding: 3px;
+                border-radius: 3px;
+                text-decoration: none;
+
+                &:hover {
+                    color: #fff !important;
+                    background: @tag-bg-color_hover;
+                }
+            }
+
+            &.label-size-5 {
+                font-size: 125%;
+                color: @tag-color;
+            }
+
+            &.label-size-4 {
+                font-size: 110%;
+                color: lighten( @tag-color,5%);
+            }
+
+            &.label-size-3 {
+                font-size: 95%;
+                color: lighten( @tag-color,10%);
+            }
+
+            &.label-size-2 {
+                font-size: 80%;
+                color: lighten( @tag-color,15%);
+            }
+
+            &.label-size-1 {
+                font-size: 70%;
+                color: lighten( @tag-color,20%);
+            }
+        }
+    }
+
+    &#ContactForm1 {
+        display: none;
+    }
+}

@@ -2,5 +2,13 @@
   {
     "outputFile": "css/styles.css",
     "inputFile": "css/styles.less"
+  },
+  {
+    "outputFile": "cdn/blog/css/main.css",
+    "inputFile": "cdn/blog/app_less/main.less"
+  },
+  {
+    "outputFile": "cdn/blog/css/main-images.css",
+    "inputFile": "cdn/blog/app_less/main-images.less"
   }
 ]

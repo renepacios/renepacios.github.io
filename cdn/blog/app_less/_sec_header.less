@@ -1,0 +1,98 @@
+﻿@import "_definitions";
+
+.header {
+    .title-wrapper {
+        //contenido de la cabecera
+        & hgroup {
+            h1 a {
+                font-family: 'Ubuntu', Gadget, sans-serif;
+            }
+
+            h3 {
+                font-family: Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
+                color: green;
+                font-weight: bold;
+            }
+        }
+
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        & #social-icons {
+            a {
+                &:hover span {
+                    .rf-transition-all(0.4s);
+                    .rf-rotate();
+                }
+            }
+        }
+        //borde bajo el header con la flecha que está en el centro
+        border-bottom: 5px solid @borde-flecha-color;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: -webkit-calc(50% - 10px);
+            left: -moz-calc(50% - 10px);
+            left: -o-calc(50% - 10px);
+            left: 50%; // calc(50% - 10px);
+            margin-top: 35px; //debe llevar el margen igual al padding del contenedor + el alto del margin inferior
+            border-width: 10px 10px 0;
+            border-style: solid;
+            border-color: @borde-flecha-color transparent;
+        }
+    }
+
+    .nav {
+        .buscador {
+            width: 180px;
+            padding: 10px;
+
+            input.t-search {
+                -moz-transition: width 0.3s linear;
+                -o-transition: width 0.3s linear;
+                -webkit-transition: width 0.3s linear;
+                transition: width 0.3s linear;
+                width: 150px;
+
+                &:focus {
+                    -moz-transition: width 0.3s linear;
+                    -o-transition: width 0.3s linear;
+                    -webkit-transition: width 0.3s linear;
+                    transition: width 0.3s linear;
+                    width: 180px;
+                }
+            }
+        }
+
+        .menu-login {
+            i {
+                margin-right: 5px;
+            }
+
+            .dropdown-menu {
+                margin-top: 5px;
+            }
+        }
+
+        li a {
+            &:hover {
+                .rf-transition(0.5s ease);
+                /*//background-color: lighten(#000,10%);
+                i::before {
+                    //.rf-transition-all(0.2s);
+                    .rf-rotate();
+                }*/
+            }
+        }
+    }
+
+    #search-Xs li {
+        padding: 3px 10px 0;
+    }
+}
