@@ -3,17 +3,29 @@
 <html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 
   <head>
-    <b:include data='blog' name='all-head-content'/>
-    <link href='//drive.google.com/uc?id=13yDWx4vupLfT_l0T4WuXnV6_TDJJhXYl' rel='stylesheet'/>
+    
+      <b:include data='blog' name='all-head-content'/>
+      
+    <link href='//www.webrene.es/cdn/blog/css/reset.min.css' rel="preload" as="style" onload="this.rel='stylesheet'"/>
     <!-- reset -->
-    <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet'/>
+
+    <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel="preload" as="style" onload="this.rel='stylesheet'"/>
     <link crossorigin='anonymous' href='//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' rel='stylesheet'/>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,600,700|Metamorphous|Ubuntu:300,400' rel='stylesheet'/>
-    <link href='//drive.google.com/uc?id=11mWR7uBP7VwWNFNLm6IJxUiRP0WzUHHv' rel='stylesheet' type='text/css'/>
+
+    <link href='//www.webrene.es/cdn/blog/css/base.min.css' rel="preload" as="style" onload="this.rel='stylesheet'"
+          type='text/css'/>
     <!-- base -->
-    <link href='//drive.google.com/uc?id=1h8Dp1M89-dW_bFoL5gpnNUPNmZdeq1ee' rel='stylesheet' type='text/css'/>
+    <link href='//www.webrene.es/cdn/blog/css/main-images.min.css'
+          rel="preload" as="style" onload="this.rel='stylesheet'"
+          type='text/css'/>
+    <!-- images & sprites -->
+
+    <link href='//www.webrene.es/cdn/blog/css/main.min.css' 
+          rel="preload" as="style" onload="this.rel='stylesheet'" 
+          type='text/css'/>
     <!-- main -->
-    <link href='https://drive.google.com/uc?id=1YdXQyCZa68FOGdC_06XRbiQxz9ysPZBI' rel='stylesheet' type='text/css'/>
+    <link href='//www.webrene.es/cdn/blog/css/responsive.min.css' rel="preload" as="style" onload="this.rel='stylesheet'" type='text/css'/>
     <!-- responsive -->
 
 
@@ -28,35 +40,15 @@
     </b:if>
     <b:skin>
       <![CDATA[
-            
-            
-            
-            
-            
-            
-            
-            
-
 #contenedor-general {
 margin:0 auto 0; /*Centramos el contenido*/
 padding:0; /*Evitamos espaciados internos*/
 }
-
-
-
 #pie-de-pagina {
 padding:10px; /*Espaciados internos*/
 margin:30px 0 0 0; /*Márgenes*/
 }
-
-        
-        
-        
-        
-        
-        
-        
-        ]]>
+]]>
     </b:skin>
   </head>
   <body>
@@ -169,9 +161,9 @@ margin:30px 0 0 0; /*Márgenes*/
               <a href='http://www.facebook.com/rene.pacios'>
                 <span class='i-color i-facebook circulo  x2'> </span>
               </a>
-              <a href='https://plus.google.com/101991730637271136135/posts'>
+              <!--<a href='https://plus.google.com/101991730637271136135/posts'>
                 <span class='i-color i-gplus circulo x2'> </span>
-              </a>
+              </a>-->
               <a href='feed:webreneblog2.blogspot.com/feeds/posts/default?alt=rss'>
                 <span class='i-color i-rss circulo x2'> </span>
               </a>
@@ -1895,7 +1887,7 @@ margin:30px 0 0 0; /*Márgenes*/
 
     </div>
 
-    <script crossorigin='anonymous' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' src='https://code.jquery.com/jquery-2.2.4.min.js'/>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js' type='text/javascript'/>
+    <script defer='defer' async type='text/javascript' crossorigin='anonymous' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' src='https://code.jquery.com/jquery-2.2.4.min.js'/>
+    <script defer='defer' async src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js' type='text/javascript'/>
   </body>
 </html>
