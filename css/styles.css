@@ -221,6 +221,12 @@ a:hover {
   }
 }
 @media (orientation: landscape) and (max-device-width: 1024px) {
+  .no-webp .bg {
+    background-image: url("../images/bg/bg-1024x768.JPG");
+  }
+  .webp .bg {
+    background-image: url("../images/bg/webp/bg-1024x768.webp");
+  }
   .bg {
     height: 200%;
   }
