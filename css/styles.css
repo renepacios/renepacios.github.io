@@ -125,6 +125,66 @@ a:hover {
   font-size: 0.9rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
+.konami-code {
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  background-color: #000;
+  padding: 2px 10px;
+  border-radius: 10px;
+  animation: fadein 2s;
+}
+.konami-code a {
+  color: #fff;
+  text-decoration: none;
+}
+.konami-code a:hover {
+  text-decoration: underline;
+}
+.konami-code span + span {
+  margin: 3px;
+}
+.konami-code:hover {
+  transform: scale(1.1);
+}
+@keyframes fadein {
+  /*0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1.0;
+    }*/
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 @media screen and (min-width: 1921px) {
   .no-webp .bg {
     background-image: url("../images/bg/bg-1920x1080.JPG");
@@ -190,6 +250,9 @@ a:hover {
     width: 175px;
     height: 175px;
   }
+  .konami-code {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   .no-webp .bg {
@@ -211,6 +274,9 @@ a:hover {
   html {
     font-size: 10px;
   }
+  .konami-code {
+    display: none;
+  }
 }
 @media screen and (max-width: 320px) {
   .no-webp .bg {
@@ -218,6 +284,9 @@ a:hover {
   }
   .webp .bg {
     background-image: url("../images/bg/webp/bg-320x569.webp");
+  }
+  .konami-code {
+    display: none;
   }
 }
 @media (orientation: landscape) and (max-device-width: 1024px) {
@@ -237,5 +306,8 @@ a:hover {
   }
   .content {
     margin: 0 auto;
+  }
+  .konami-code {
+    display: none;
   }
 }
