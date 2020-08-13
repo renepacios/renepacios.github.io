@@ -10,5 +10,10 @@
   {
     "outputFile": "cdn/blog/css/main-images.css",
     "inputFile": "cdn/blog/app_less/main-images.less"
+  },
+  {
+    "outputFile": "renepacios/projects/css/projects.css",
+    "inputFile": "renepacios/projects/css/projects.less"
   }
+
 ]

@@ -1,0 +1,134 @@
+﻿//    Mixins
+.mixin_transition(@args: all 0.4s ease 0s) {
+	-webkit-transition: @args;
+	-moz-transition: @args;
+	-o-transition: @args;
+	transition: @args;
+}
+
+.mixin_transition-duration(@args1, @args2) {
+	-webkit-transition-duration: @args1, @args2;
+	-moz-transition-duration: @args1, @args2;
+	-o-transition-duration: @args1, @args2;
+	transition-duration: @args1, @args2;
+}
+
+.mixin_transition-delay(@args1, @args2) {
+	-webkit-transition-delay: @args1, @args2;
+	-moz-transition-delay: @args1, @args2;
+	-o-transition-delay: @args1, @args2;
+	transition-delay: @args1, @args2;
+}
+
+.mixin_transition-property(@args1, @args2) {
+	-webkit-transition-property: @args1, @args2;
+	-moz-transition-property: @args1, @args2;
+	-o-transition-property: @args1, @args2;
+	transition-property: @args1, @args2;
+}
+
+.mixin_border-gradient(@deg, @args1, @args2) {
+	border-image: -webkit-linear-gradient(@deg, @args1, @args2);
+	border-image: -moz-linear-gradient(@deg, @args1, @args2);
+	border-image: -o-linear-gradient(@deg, @args1, @args2);
+	border-image: linear-gradient(@deg, @args1, @args2);
+}
+
+.mixin_gradient(@deg, @args1, @args2) {
+	background: -webkit-linear-gradient(@deg, @args1, @args2);
+	background: -moz-linear-gradient(@deg, @args1, @args2);
+	background: -o-linear-gradient(@deg, @args1, @args2);
+	background: linear-gradient(@deg, @args1, @args2);
+}
+
+.mixin_gradient2(@deg, @args1,@args2, @args3) {
+	background: -webkit-linear-gradient(@deg, @args1, @args2, @args3);
+	background: -moz-linear-gradient(@deg, @args1, @args2, @args3);
+	background: -ms-linear-gradient(@deg, @args1, @args2, @args3);
+	background: -o-linear-gradient(@deg, @args1, @args2, @args3);
+	background: linear-gradient(@deg, @args1, @args2, @args3);
+}
+
+.mixin_transform(@transform) {
+	-webkit-transform: @transform;
+	-moz-transform: @transform;
+	-ms-transform: @transform;
+	-o-transform: @transform;
+	transform: @transform;
+}
+
+.mixin_transform-origin(@value) {
+	-webkit-transform-origin: @value;
+	-moz-transform-origin: @value;
+	-ms-transform-origin: @value;
+	-o-transform-origin: @value;
+	transform-origin: @value;
+}
+
+.mixin_backface-visibility(@value) {
+	-webkit-backface-visibility: @value;
+	-moz-backface-visibility: @value;
+	backface-visibility: @value;
+}
+
+
+
+.mixin_filter (@value) {
+	filter: @value;
+	-o-filter: @value;
+	-ms-filter: @value;
+	-moz-filter: @value;
+	-webkit-filter: @value;
+}
+
+
+@keyframes fadein {
+	/*0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1.0;
+    }*/
+	15% {
+		-webkit-transform: translateX(5px);
+		transform: translateX(5px);
+	}
+
+	30% {
+		-webkit-transform: translateX(-5px);
+		transform: translateX(-5px);
+	}
+
+	50% {
+		-webkit-transform: translateX(3px);
+		transform: translateX(3px);
+	}
+
+	65% {
+		-webkit-transform: translateX(-3px);
+		transform: translateX(-3px);
+	}
+
+	80% {
+		-webkit-transform: translateX(2px);
+		transform: translateX(2px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+.mixin_animation (@args) {
+	-webkit-animation: @args;
+	-moz-animation: @args;
+	-o-animation: @args;
+	animation: @args;
+}
+
