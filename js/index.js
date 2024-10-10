@@ -22,5 +22,21 @@
         });
     });
 
+    window.addEventListener('scroll', function () {
+        // Cargar el script de Google Analytics solo después de que el usuario se desplaza
+        var script = document.createElement('script');
+        script.src = "https://www.googletagmanager.com/gtag/js?id=UA-32683326-1";
+        document.head.appendChild(script);
+
+        // Inicializar Google Analytics
+        script.onload = function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-32683326-1');
+        };
+    }, { once: true });
+
+
 
 })(window.cnx = window.cnx || {}, document);
